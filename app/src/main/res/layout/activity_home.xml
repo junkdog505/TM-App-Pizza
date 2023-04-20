@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <ImageView
+        android:id="@+id/pizzaLogo"
+        android:layout_width="179dp"
+        android:layout_height="152dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="Imagen logo de la pizzeria"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.241"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo"
+        app:srcCompat="@drawable/pizza_logo" />
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="389dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="PiZzZeria JunkDog"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.686"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/pizzasBtn"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="25dp"
+        android:contentDescription="Imagen de las pizzas"
+        android:background="@color/fondo_transparente"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/refrescosBtn"
+        app:srcCompat="@mipmap/pizza_button" />
+
+    <ImageButton
+        android:id="@+id/refrescosBtn"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="44dp"
+        android:contentDescription="Imagen de los refrescos"
+        android:background="@color/fondo_transparente"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pizzaLogo"
+        app:srcCompat="@mipmap/refresco_button" />
+
+    <ImageButton
+        android:id="@+id/usuarioBtn"
+        android:layout_width="109dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="48dp"
+        android:scaleType="centerInside"
+        android:background="@color/fondo_transparente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo"
+        app:srcCompat="@mipmap/usuario_button"
+        android:contentDescription="Imagen de información del usuario"/>
+
+    <ImageButton
+        android:id="@+id/costoBtn"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="25dp"
+        android:contentDescription="Imagen del presupuesto"
+        android:background="@color/fondo_transparente"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pizzasBtn"
+        app:srcCompat="@mipmap/presupuesto_button" />
+
+    <TextView
+        android:id="@+id/textoUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="10dp"
+        android:text="Usuario"
+        android:textSize="50px"
+        app:layout_constraintBottom_toTopOf="@+id/usuarioBtn"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textoBebida"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="108dp"
+        android:text="Bebidas"
+        android:textSize="60px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="2.0"
+        app:layout_constraintStart_toEndOf="@+id/refrescosBtn"
+        app:layout_constraintTop_toBottomOf="@+id/usuarioBtn" />
+
+    <TextView
+        android:id="@+id/textoPizza"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="96dp"
+        android:text="Tipos de Pizzas"
+        android:textSize="60px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="3.5"
+        app:layout_constraintStart_toEndOf="@+id/pizzasBtn"
+        app:layout_constraintTop_toBottomOf="@+id/textoBebida" />
+
+    <TextView
+        android:id="@+id/textoCosto"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="104dp"
+        android:text="Costo Total"
+        android:textSize="60px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintStart_toEndOf="@+id/costoBtn"
+        app:layout_constraintTop_toBottomOf="@+id/textoPizza" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
